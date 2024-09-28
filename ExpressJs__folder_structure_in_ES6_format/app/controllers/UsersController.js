@@ -1,10 +1,12 @@
-import { loginService, logOutService, profileReadService, registerService } from "../service/UserServices.js";
+
+import { loginService, logOutService, profileReadService, registerService } from './../service/UserServices.js';
 
 //! Register service
 export const register = async (req, res) => {
     let result = await registerService(req)
     return res.json(result);
 }
+
 
 //! Login Service 
 export const login = async (req, res) => {
