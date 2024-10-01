@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import BlogModel from "../model/BlogModel.js";
 const { ObjectId } = mongoose.Types;
 
-//! ProductService
+//! CreateBlogService
 export const CreateBlogService = async (req) => {
     try {
         let ReqBody = req.body;
@@ -13,7 +13,7 @@ export const CreateBlogService = async (req) => {
     }
 };
 
-//! ProductService
+//! ReadBlogService
 export const ReadBlogService = async (req) => {
     try {
         let id = new ObjectId(req.params.id);

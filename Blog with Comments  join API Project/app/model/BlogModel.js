@@ -2,7 +2,6 @@ import mongoose from 'mongoose';
 const DataSchema = mongoose.Schema(
   {
     title: { type: String, required: true },
-    // productID: { type: mongoose.Schema.Types.ObjectId, required: true },
     des: { type: String, required: true },
   },
   {

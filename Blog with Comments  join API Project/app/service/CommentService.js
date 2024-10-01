@@ -1,7 +1,6 @@
-import mongoose from "mongoose";
 import CommentModel from "../model/CommentModel.js";
 
-//! ProductService
+//! CreateCommentService
 export const CreateCommentService = async (req) => {
     try {
         let ReqBody = req.body;
