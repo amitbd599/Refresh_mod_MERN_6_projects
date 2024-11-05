@@ -34,6 +34,9 @@ mongoose.connect(DATABASE, { autoIndex: true }).then(() => {
 })
 
 
+app.use("/uploads", express.static("uploads"));
+
+
 app.use("/api", router)
 
 app.listen(PORT, () => {
